@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 01</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+
+    <!-- Add a script with a function in the head section that will change the text in the paragraph when it is called by a button, and add the button to call it -->
+
+    <script>
+    
+        function myFunctionHead(){
+            
+            (document.getElementById('paragraph').innerHTML = 'Changed from a function in the head section')
+    
+        }
+    
+        </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Web Page</h1>
+        <img id="myImage" src="images/legs.jpg">
+        <div>
+            <button onclick = 'document.getElementById("myImage").src = "images/woman.jpg" '>Woman</button>
+            <button onclick = 'document.getElementById("myImage").src = "images/legs.jpg" '>Legs</button>
+            <button onclick = 'document.getElementById("myImage").src = "images/man.jpg" '>Man</button>
+        </div>
+        <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <!-- Add JavaScript in the body of the page that will add text to the paragraph when the page loadsAdd JavaScript in the body of the page that will add text to the paragraph when the page loads -->
+
+        <script>
+            document.write('I am extra text that got added when the page loaded. Sweet huh?');
+        </script>
+
+        <!-- Add an external JavaScript file that will change the text in the paragraph when it is called by a button, and add the button to call it -->
+
+        <button type="button" onclick = 'myFunction()'>Call external function!</button>
+
+        <button type="button" onclick = 'myFunctionHead()'>Call head script!</button>
+
+        <!-- Add a button and a script to change the width of the image. -->
+
+        <button type="button" onclick = "document.getElementById('myImage').style.width = '40px'; ">Image Width</button>
+
+        <!-- Add a button and a script to change the color of the text in the paragraph -->
+
+        <button type="button" onclick = "document.getElementById('paragraph').style.color = 'blue'; ">Paragraph Color</button>
+
+        <!-- Add show/hide buttons with the associated scripts to show and hide the image -->
+
+        <div class="buttons">
+            <button onclick = "document.getElementById('myImage').style.display='block' ">show</button>
+            <button onclick = "document.getElementById('myImage').style.display='none' ">hide</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
