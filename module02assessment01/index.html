@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <h1>Online Order Form</h1>
+    <form id="orderForm">
+        <div class="section">
+            <h2>Customer Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="section">
+            <h2>Drinks</h2>
+            <label for="coke">Coke ($2.00):</label>
+            <input type="number" id="coke" name="coke" value="0" min="0">
+            <br>
+            <label for="water">Water ($1.00):</label>
+            <input type="number" id="water" name="water" value="0" min="0">
+            <br>
+            <label for="applejuice">Apple Juice ($3.00):</label>
+            <input type="number" id="applejuice" name="applejuice" value="0" min="0">
+            <br>
+            <label for="tea">Tea ($2.50):</label>
+            <input type="number" id="tea" name="tea" value="0" min="0">
+            <br>
+            <label for="coffee">Coffee ($3.50):</label>
+            <input type="number" id="coffee" name="coffee" value="0" min="0">
+        </div>
+
+        <div class="section">
+            <h2>Sandwiches</h2>
+            <label for="hamburger">Hamburger ($5.00):</label>
+            <input type="number" id="hamburger" name="hamburger" value="0" min="0">
+            <br>
+            <label for="hotdog">Hot Dog ($4.00):</label>
+            <input type="number" id="hotdog" name="hotdog" value="0" min="0">
+            <br>
+            <label for="grilledCheese">Grilled Cheese ($4.50):</label>
+            <input type="number" id="grilledCheese" name="grilledCheese" value="0" min="0">
+            <br>
+            <label for="bltSandwich">BLT Sandwich ($6.00):</label>
+            <input type="number" id="bltSandwich" name="bltSandwich" value="0" min="0">
+            <br>
+            <label for="veggieWrap">Veggie Wrap ($5.50):</label>
+            <input type="number" id="veggieWrap" name="veggieWrap" value="0" min="0">
+        </div>
+
+        <div class="section">
+            <h2>Desserts/Sides</h2>
+            <label for="fries">Fries ($2.50):</label>
+            <input type="number" id="fries" name="fries" value="0" min="0">
+            <br>
+            <label for="onionRings">Onion Rings ($3.00):</label>
+            <input type="number" id="onionRings" name="onionRings" value="0" min="0">
+            <br>
+            <label for="iceCream">Ice Cream ($3.50):</label>
+            <input type="number" id="iceCream" name="iceCream" value="0" min="0">
+            <br>
+            <label for="chocoCake">Chocolate Cake ($4.50):</label>
+            <input type="number" id="chocoCake" name="chocoCake" value="0" min="0">
+            <br>
+            <label for="cookie">Cookie ($1.50):</label>
+            <input type="number" id="cookie" name="cookie" value="0" min="0">
+        </div>
+
+    </form>
+
+    <div class="summary" id="orderSummary">
+        <h2 id="includeCustomerName">Order Summary</h2>
+        <br/>
+        <p id="drinkSummary">Drink Summary</p>
+        <ul>
+            <li id="cokeSummary"></li>
+            <li id="waterSummary"></li>
+            <li id="appleJuiceSummary"></li>
+            <li id="teaSummary"></li>
+            <li id="coffeeSummary"></li>
+        </ul>
+        <p id="drinksTotal"></p>
+        <br/><br/><br/>
+        <p id="sandwichSummary">Sandwiches Summary</p>
+        <ul>
+            <li id="hamburgerSummary"></li>
+            <li id="hotdogSummary"></li>
+            <li id="grilledCheeseSummary"></li>
+            <li id="bltSandwichSummary"></li>
+            <li id="veggieWrapSummary"></li>
+        </ul>
+        <p id="sandwichTotal"></p>
+        <br/><br/><br/>
+        <p id="dessertSummary">Dessert/Sides Summary</p>
+        <ul>
+            <li id="friesSummary"></li>
+            <li id="onionRingsSummary"></li>
+            <li id="iceCreamSummary"></li>
+            <li id="chocoCakeSummary"></li>
+            <li id="cookieSummary"></li>
+        </ul>
+        <p id="dessertTotal"></p>
+        <br/><br/><br/>
+        <p id="grandTotal"></p>
+    </div>
+
+    
+    <button type="button" onclick="alert('Haha! This is a dummy form!')">Submit Order!</button>
+
+
+</div>
+
+<footer><h1>Maria B Cosenza</h1></footer>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
