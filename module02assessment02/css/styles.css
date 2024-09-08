@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.description {
+    width: 70%;
+    margin:auto;
+    margin-top: 50px;
+}
+
+img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+hr {
+    width: 80%;
+    margin-bottom: 50px;
+}
