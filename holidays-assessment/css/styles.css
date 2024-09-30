@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centers the content */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+p#holidays {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+    color: gray;
+}
